@@ -70,7 +70,7 @@
     <form onsubmit="return validateForm()">
       <input type="text" id="name" placeholder="Your Name" required>
       <input type="email" id="email" placeholder="Your Email" required>
-      <input type="mnumber" id="number" placeholder="Your Mobile Number" required>
+      <input maxlength="10" type="mnumber" id="number" placeholder="Your Mobile Number" required>
       <textarea id="message" rows="4" placeholder="Your Message"></textarea>
       <button type="submit">Send Message</button>
     </form>
