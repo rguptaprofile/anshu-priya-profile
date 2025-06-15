@@ -22,7 +22,7 @@
   const successMsg = document.getElementById('response');
   const errorMsg = document.getElementById('error');
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('Send Message', (e) => {
     e.preventDefault();
 
     const name = document.getElementById("name").value.trim();
