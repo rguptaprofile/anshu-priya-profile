@@ -66,6 +66,7 @@ section {
 .portfolio,
 .contact {
   background: var(--light);
+  gap: 100px;
 }
 
 .card {
