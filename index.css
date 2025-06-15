@@ -69,7 +69,8 @@ section {
   gap: 30px;
 }
 
-.skills {
+.skills,
+.portfolio {
   max-width: 100%;
 }
 
