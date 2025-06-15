@@ -67,18 +67,20 @@
   <section class="contact" id="contact">
     <h2>Contact Me</h2>
     <p>Interested in working together? Fill out the form below or reach out via social media.</p>
-   <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdEXAMPLE/viewform" method="POST" target="hidden_iframe" onsubmit="return handleSubmit();">
-    <input type="text" name="entry.123456789" id="name" placeholder="Your Name" required>
-    <input type="email" name="entry.234567890" id="email" placeholder="Your Email" required>
-    <input type="text" maxlength="10" name="entry.345678901" id="number" placeholder="Your Mobile Number" required>
-    <textarea name="entry.456789012" id="message" rows="4" placeholder="Your Message"></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+    <form id="contact-form" action="https://docs.google.com/forms/d/1WR-LCplk8ow-72ba5pFlMnJ0ABHP-ZaLCSbmQ4W81EI/prefill" method="POST"
+      target="hidden_iframe" onsubmit="return handleSubmit();">
+      <input type="text" name="entry.123456789" id="name" placeholder="Your Name" required>
+      <input type="email" name="entry.234567890" id="email" placeholder="Your Email" required>
+      <input type="text" maxlength="10" name="entry.345678901" id="number" placeholder="Your Mobile Number" required>
+      <textarea name="entry.456789012" id="message" rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
 
-  <p class="success" id="successMsg" style="display:none;">Thank you! Your message has been sent.</p>
+    <p class="success" id="successMsg" style="display:none;">Thank you! Your message has been sent.</p>
 
-  <!-- Hidden iframe to submit the form silently -->
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) showSuccessMessage();"></iframe>
+    <!-- Hidden iframe to submit the form silently -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+      onload="if(submitted) showSuccessMessage();"></iframe>
   </section>
 
   <footer>
