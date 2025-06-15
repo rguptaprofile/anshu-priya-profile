@@ -78,13 +78,13 @@ section {
 }
 
 .card ul a {
-   margin-left: 5px;
+  margin-left: 20px;
 }
 
 .portfolio-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  
+
 }
 
 
