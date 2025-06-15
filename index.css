@@ -69,6 +69,10 @@ section {
   gap: 30px;
 }
 
+.skills {
+  max-width: fit-content;
+}
+
 .card {
   background: white;
   padding: 20px;
