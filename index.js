@@ -17,7 +17,7 @@
 
 //  contact-form handller 
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbwBMN-aBimC4g0kia2nzUrb_vvXZrMWxGbiYl7RPP6f0uH3dXDg1yAOn6N-CpBJQdW1oQ/exec" // <-- Replace with your actual URL
+const scriptURL = "https://script.google.com/macros/s/AKfycbwq7krN6zWyjCV_Ou6zGmzW9dNXWBongjyWgGR79sjY7m7HDAnIaGKjJ2lS_86Mev3Qfw/exec"; // <-- Replace with your actual URL
 const form = document.getElementById('contact-form');
 const successMsg = document.getElementById('response');
 const errorMsg = document.getElementById('error');
