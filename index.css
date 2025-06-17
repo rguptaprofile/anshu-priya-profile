@@ -231,6 +231,10 @@ h2 {
   margin: 15px 0;
 }
 
+.content {
+  margin-left: 40px;
+}
+
 .card ul a {
   margin-left: 20px;
 }
