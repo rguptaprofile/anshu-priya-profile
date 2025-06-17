@@ -27,7 +27,7 @@ body {
       position: relative;
     }
 
-    .header h1, p {
+    .header, h2, p {
         color: #fff;
     }
 
