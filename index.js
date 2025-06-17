@@ -12,21 +12,28 @@
 
 
 
+// in the header section | navbar ~ Menu button
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+});
 
 
 
 //  contact-form handller 
- let submitted = false;
+let submitted = false;
 
-    function handleSubmit() {
-      submitted = true;
-      return true;
-    }
+function handleSubmit() {
+  submitted = true;
+  return true;
+}
 
-    function showSuccessMessage() {
-      if (submitted) {
-        document.getElementById('contact-form').reset();
-        document.getElementById('successMsg').style.display = 'block';
-        submitted = false;
-      }
-    }
+function showSuccessMessage() {
+  if (submitted) {
+    document.getElementById('contact-form').reset();
+    document.getElementById('successMsg').style.display = 'block';
+    submitted = false;
+  }
+}
