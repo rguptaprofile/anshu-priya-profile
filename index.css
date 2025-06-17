@@ -20,7 +20,7 @@ body {
 
 
 header {
-  background-color: rgb(110, 110, 166);
+  background-color: rgb(54, 54, 130);
   padding: 10px 20px;
   display: flex;
   justify-content: flex-end;
@@ -30,6 +30,8 @@ header {
 
 .logo h1 {
   color: #fff;
+  display: flex;
+  position: relative;
   justify-content: space-around;
 }
 
