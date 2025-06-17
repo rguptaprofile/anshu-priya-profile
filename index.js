@@ -36,7 +36,6 @@ function handleSubmit() {
   submitted = true;
   return true;
 }
-
 function showSuccessMessage() {
   if (submitted) {
     document.getElementById('contact-form').reset();
@@ -44,3 +43,12 @@ function showSuccessMessage() {
     submitted = false;
   }
 }
+
+
+
+
+// Trigger glow after animation ends
+const main = document.getElementById('main');
+main.addEventListener('animationend', () => {
+  main.classList.add('glow');
+});
