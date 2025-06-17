@@ -28,7 +28,7 @@ body {
     }
 
 
-     header h2 {
+     /* header h2 {
       font-size: 2rem;
       font-weight: bold;
       margin-bottom: 5px;
@@ -44,7 +44,7 @@ body {
       margin-bottom: 15px;
         justify-self: left;
       display: flex;
-    }
+    } */
 
     nav {
       position: relative;
