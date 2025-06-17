@@ -19,14 +19,26 @@ body {
 }
 
 /* Navbar Container */
-nav {
-  background-color: #333;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
-}
+ header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: #0d0d0d;
+   z-index: 1000;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ /* Navbar */
+ nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 14px 30px;
+   max-width: 1200px;
+   margin: auto;
+   color: white;
+ }
 
 nav ul {
   display: flex;
