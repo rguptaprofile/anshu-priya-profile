@@ -13,12 +13,12 @@
 
 
 // in the header section | navbar ~ Menu button
-const menuToggle = document.getElementById('menu-toggle');
-  const navMenu = document.getElementById('nav-menu');
+const toggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
 
-  menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('show');
-  });
+toggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
 
 
 
