@@ -23,13 +23,14 @@ header {
   background-color: #111;
   padding: 10px 20px;
   position: relative;
-  max-height: 500px;
+  max-height: 1000px;
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  max-height: 500px;
 }
 
 nav ul {
