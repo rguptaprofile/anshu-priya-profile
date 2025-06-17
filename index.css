@@ -27,6 +27,10 @@ body {
       position: relative;
     }
 
+    .header h1, p {
+        color: #fff;
+    }
+
     nav {
       position: relative;
     }
