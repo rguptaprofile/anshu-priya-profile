@@ -30,11 +30,7 @@ header {
 
 .logo h1 {
   color: #fff;
-  display: flex;
-  position: relative;
-  justify-content: space-around;
-  justify-content: flex-end;
-  align-items: center;
+  margin-right: 20px;
 }
 
 nav {
