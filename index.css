@@ -22,14 +22,13 @@ body {
 header {
   background-color: #111;
   padding: 10px 20px;
-  position: relative;
+  position: fixed;
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position: fixed;
 }
 
 nav ul {
