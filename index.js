@@ -13,11 +13,18 @@
 
 
 // in the header section | navbar ~ Menu button
-const toggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
 
-toggle.addEventListener('click', () => {
-  navLinks.classList.toggle('show');
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+});
+
+// Optional: close dropdown when link is clicked
+document.querySelectorAll("nav ul li a").forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("show");
+  });
 });
 
 
