@@ -27,8 +27,23 @@ body {
       position: relative;
     }
 
-    .header, h2, p {
-        color: #fff;
+
+     header h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #fff;
+      align-self: start;
+      justify-self: left;
+      display: flex;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 15px;
+        justify-self: left;
+      display: flex;
     }
 
     nav {
