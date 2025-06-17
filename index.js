@@ -14,11 +14,11 @@
 
 // in the header section | navbar ~ Menu button
 const menuToggle = document.getElementById('menu-toggle');
-const navMenu = document.getElementById('nav-menu');
+  const navMenu = document.getElementById('nav-menu');
 
-menuToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('show');
-});
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
 
 
 
