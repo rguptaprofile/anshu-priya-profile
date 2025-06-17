@@ -20,12 +20,16 @@ body {
 
 
 header {
-  background-color: #333;
+  background-color: rgb(110, 110, 166);
   padding: 10px 20px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   position: relative;
+}
+
+.logo h1 {
+  color: #fff;
 }
 
 nav {
