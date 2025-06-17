@@ -33,6 +33,7 @@ header {
   display: flex;
   position: relative;
   justify-content: space-around;
+  justify-content: flex-end;
 }
 
 nav {
