@@ -1,14 +1,24 @@
-// function validateForm() {
-//       const name = document.getElementById("name").value.trim();
-//       const email = document.getElementById("email").value.trim();
-//       const message = document.getElementById("message").value.trim();
-//       if (!name || !email || !message) {
-//         alert("Please fill in all fields.");
-//         return false;
-//       }
-//       alert("Message sent! I'll get back to you soon.");
-//       return true;
-//     }
+// Contact Form Section
+
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const number = document.getElementById('number').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  const mailtoLink = `mailto:rahulgupt1231@gmail.com?subject=Contact%20Form%20Message%20from%20${encodeURIComponent(name)}&body=
+        Name: ${encodeURIComponent(name)}%0D%0A
+        Email: ${encodeURIComponent(email)}%0D%0A
+        Mobile: ${encodeURIComponent(number)}%0D%0A
+        Message: ${encodeURIComponent(message)}`;
+
+  window.location.href = mailtoLink;
+
+  document.getElementById('confirmation').style.display = 'block';
+  document.getElementById('contact-form').reset();
+});
 
 
 

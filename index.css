@@ -243,7 +243,7 @@ h2 {
 
 
 footer {
-  background-color: var(--dark);
+  background-color: #0d0d0d;
   color: white;
   text-align: center;
   padding: 20px;
@@ -317,6 +317,15 @@ footer {
   }
 }
 
+
+
+/* contact section */
+
+.contact-form {
+  background-color: rgb(151, 138, 138);
+  max-width: 100%;
+}
+
 form input,
 form textarea {
   width: 100%;
@@ -327,15 +336,67 @@ form textarea {
   border: 1px solid #ccc;
 }
 
-form button {
-  background: var(--accent);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+f#contact-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-form button:hover {
-  background: var(--primary);
+
+/* #contact-form {
+  display: flex;
+  flex-direction: column;
 }
+
+#contact-form input,
+#contact-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+} */
+
+#contact-form button {
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #0056b3;
+}
+
+#confirmation {
+  margin-top: 15px;
+  font-size: 16px;
+  color: green;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #contact-container {
+    padding: 20px;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    font-size: 14px;
+  }
+}
+
+/* form button:hover {
+  background: var(--primary);
+} */
+
+
+/* End of Contact section */

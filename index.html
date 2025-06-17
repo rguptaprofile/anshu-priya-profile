@@ -161,25 +161,18 @@
 
 
 
-  <section class="contact" id="contact">
+  <section class="contact-form">
     <h2>Contact Me</h2>
-    <p>Interested in working together? Fill out the form below or reach out via social media.</p>
-    <form id="contact-form"
-      action="https://docs.google.com/forms/d/1lw6tJ5pkx2pUUqpg8ETlfbQl2d0myUDUUjRH0b6ld9I/edit#responses" method="POST"
-      target="hidden_iframe" onsubmit="return handleSubmit();">
-
-      <input type="text" name="entry.1392078887" id="name" placeholder="Your Name" required>
-      <input type="email" name="entry.1375827617" id="email" placeholder="Your Email" required>
-      <input type="text" maxlength="10" name="entry.1004396984" id="number" placeholder="Your Mobile Number" required>
-      <textarea name="entry.631370728" id="message" rows="4" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-
-    <p class="success" id="successMsg" style="display:none;">Thank you! Your message has been sent.</p>
-
-    <!-- Hidden iframe to submit the form silently -->
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-      onload="if(submitted) showSuccessMessage();"></iframe>
+    <div id="contact-container">
+      <form id="contact-form">
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
+        <input type="text" maxlength="10" name="number" id="number" placeholder="Your Mobile Number" required>
+        <textarea name="message" id="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="confirmation">Thank you! Your message is ready to send via your email app.</div>
+    </div>
   </section>
 
   <footer>
