@@ -34,6 +34,7 @@ header {
   position: relative;
   justify-content: space-around;
   justify-content: flex-end;
+  align-items: center;
 }
 
 nav {
