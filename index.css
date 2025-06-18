@@ -433,21 +433,22 @@ f#contact-container {
   justify-self: center;
 }
 
-hr{
+hr {
   color: blue;
   background-color: blue;
   max-width: 80%;
- margin-left: 100px;
+  margin-left: 100px;
 }
 
 .blog-posts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
+ 
 }
 
 .blog-posts .post {
-  background: white;
+  background: rgb(165, 141, 141);
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -468,4 +469,50 @@ hr{
   margin-bottom: 0.5rem;
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* Content Centre Section */
+
+
+.content-centre {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgb(165, 141, 141);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-centre h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.content-centre p {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.content-iframe {
+  width: 100%;
+  border: none;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 768px) {
+  .content-iframe {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .content-iframe {
+    height: 500px;
+  }
 }
