@@ -16,7 +16,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: rgb(231, 219, 219);
+  background-color: rgb(151, 138, 138);
   color: var(--dark);
 }
 
@@ -404,3 +404,68 @@ f#contact-container {
 
 
 /* End of Contact section */
+
+
+
+
+
+
+
+/* 
+ ADDITIONAL SECTIONS FOR CONTENT-CENTRE, BLOG & LIVE SEARCH 
+
+  Content Centre Section  */
+
+
+.content-centre,
+.blog-section,
+.live-search {
+  padding: 2rem;
+  background: rgb(151, 138, 138);
+  margin: 2rem 0;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.live-search {
+  max-width: 50%;
+  align-self: center;
+  justify-self: center;
+}
+
+hr{
+  color: blue;
+  background-color: blue;
+  max-width: 80%;
+ margin-left: 100px;
+}
+
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.blog-posts .post {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#searchInput {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#searchResults li {
+  list-style: none;
+  padding: 0.5rem;
+  background: white;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

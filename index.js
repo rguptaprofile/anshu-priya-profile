@@ -22,6 +22,7 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
 
 
 
+
 // in the header section | navbar ~ Menu button
 const menuToggle = document.getElementById("menu-toggle");
 const navMenu = document.getElementById("nav-menu");
@@ -56,9 +57,59 @@ function showSuccessMessage() {
 
 
 
-
 // Trigger glow after animation ends
 const main = document.getElementById('main');
 main.addEventListener('animationend', () => {
   main.classList.add('glow');
+});
+
+
+
+
+
+//  ADDITIONAL SECTIONS FOR CONTENT-CENTRE, BLOG & LIVE SEARCH 
+
+//  Content Centre Section 
+
+const searchableContent = [
+  "Creating Viral Reels",
+  "Instagram Algorithm 2025",
+  "YouTube Shorts Strategy",
+  "Blog Writing Tips",
+  "Social Media Analytics",
+  "Content Planning Calendar",
+  "Brand Collaborations"
+];
+
+const searchInput = document.getElementById("searchInput");
+const searchResults = document.getElementById("searchResults");
+const searchHistory = [];
+
+searchInput.addEventListener("keyup", function () {
+  const input = searchInput.value.toLowerCase();
+  searchResults.innerHTML = "";
+
+  if (input) {
+    const filtered = searchableContent.filter(item =>
+      item.toLowerCase().includes(input)
+    );
+
+    filtered.forEach(result => {
+      const li = document.createElement("li");
+      li.textContent = result;
+      searchResults.appendChild(li);
+
+      // Save history
+      if (!searchHistory.includes(result)) {
+        searchHistory.push(result);
+      }
+    });
+  }
+});
+
+// Optional: show history on blur
+searchInput.addEventListener("blur", () => {
+  if (searchHistory.length > 0) {
+    console.log("Search History:", searchHistory);
+  }
 });
